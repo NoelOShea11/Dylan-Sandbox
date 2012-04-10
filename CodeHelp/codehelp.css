@@ -1,0 +1,44 @@
+/*This is the CSS stylesheet to accompany Dylan's code help website*/
+* {
+}
+
+left {
+    text-align: left;
+}
+
+table {
+    margin: 1em 1em 2em 1em;
+    border-collapse:collapse;
+    color: darkgreen;
+    border-color: darkgreen;
+}
+
+td {
+    padding: 0.5em 1em;
+    border-top: solid 1px;
+    font-size: 14px;
+}
+
+th {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-bottom: solid 2px;
+    font-size: 16px;
+    color: black;
+}
+
+#commentComp{
+    text-align: center;
+}
+
+#commentComp .left {
+    text-align: left;
+}
+
+.errorRow {
+    color: darkred;
+}
+
+.errorRow td {
+    border-color: inherit;
+}
