@@ -11,12 +11,18 @@ table {
     border-collapse:collapse;
     color: darkgreen;
     border-color: darkgreen;
+    text-align: center;
 }
 
 td {
     padding: 0.5em 1em;
     border-top: solid 1px;
     font-size: 14px;
+    text-align: center;
+}
+
+td.left {
+	text-align: left;
 }
 
 th {
