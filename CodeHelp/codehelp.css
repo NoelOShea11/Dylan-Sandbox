@@ -1,4 +1,5 @@
 /*This is the CSS stylesheet to accompany Dylan's code help website*/
+
 * {
 }
 
@@ -18,7 +19,11 @@ td {
     padding: 0.5em 1em;
     border-top: solid 1px;
     font-size: 14px;
-    text-align: center;
+    border: 1px lightgray solid;
+}
+
+td.mono {
+    font-size: 12px;
 }
 
 td.left {
@@ -45,6 +50,25 @@ th {
     color: darkred;
 }
 
-.errorRow td {
-    border-color: inherit;
+tr.rowShade1 {
+    background-color: white;
+}
+
+tr.rowShade2 {
+    background-color: #f5f5f5;
+}
+.user_input {
+    color: darkorange;
+}
+
+.mono {
+    font-family: monospace;
+}
+/* Java-specific styles */
+.jvAccess{
+    color: red;
+}
+
+.jvReturn{
+    color: blue;
 }

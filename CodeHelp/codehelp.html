@@ -1,10 +1,16 @@
 <html>
-    <head>
+    <head>&#62
         <title>Dylan's Helpful Coding Reminders</title>
         <LINK href="codehelp.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <a href="#comparisons" id ="top">Cross-Language</a> <a href="#python">Python</a> <a href="#html">HTML</a> <a href="#java">Java</a> <a href="#javascript">Javascript</a> <a href="#css">CSS</a> <a href="#r">R</a>
+        <a href="#comparisons" id ="top">Cross-Language</a>
+        <a href="#python">Python</a>
+        <a href="#html">HTML</a>
+        <a href="#java">Java</a>
+        <a href="#javascript">Javascript</a>
+        <a href="#css">CSS</a>
+        <a href="#r">R</a>
         <hr>
         <h2><a id="comparisons">Cross-Language Comparisons</a></h2>
         
@@ -18,35 +24,35 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="rowShade1">
                     <td>Python</td>
                     <td>#</td>
-                    <td class="left">#This is a Python multi-line comment</td>
+                    <td class="left mono">#This is a Python multi-line comment</td>
                 </tr>
-                <tr>
+                <tr class="rowShade2">
                     <td>HTML</td>
                     <td>&#60;!-- --&#62;</td>
-                    <td class="left">&#60;!--This is an HTML single-line comment--&#62;</td>
+                    <td class="left mono">&#60;!--This is an HTML single-line comment--&#62;</td>
                 </tr>
-                <tr>
+                <tr class="rowShade1">
                     <td>Java</td>
                     <td>//</td>
-                    <td class="left">//This is a Java single-line comment</td>
+                    <td class="left mono">//This is a Java single-line comment</td>
                 </tr>
-                <tr>
+                <tr class="rowShade2">
                     <td>Javascript</td>
                     <td>//</td>
-                    <td class="left">//This is a Javascript single-line comment</td>
+                    <td class="left mono">//This is a Javascript single-line comment</td>
                 </tr>
-                <tr>
+                <tr class="rowShade1">
                     <td>CSS</td>
                     <td>/* */</td>
-                    <td class="left">/*This is a CSS multi-line comment*/</td>
+                    <td class="left mono">/*This is a CSS multi-line comment*/</td>
                 </tr>
-                <tr>
+                <tr class="rowShade2">
                     <td>R</td>
                     <td>#</td>
-                    <td class="left"># This is a single-line R comment</td>
+                    <td class="left mono"># This is a single-line R comment</td>
                 </tr>
             </tbody>
             <tfoot>
@@ -64,37 +70,37 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="rowShade1">
                     <td>Python</td>
                     <td>" " "</td>
                     <td>" " "</td>
                     <td class="left">" " " <br/>This is a Python multi-line comment<br />" " "</td>
                 </tr>
-                <tr>
+                <tr class="rowShade2">
                     <td>HTML</td>
                     <td>&#60;!--</td>
                     <td>--&#62;</td>
                     <td class="left">&#60;!--<br/>This is an HTML multi-line comment<br/>--&#62;</td>
                 </tr>
-                <tr>
+                <tr class="rowShade1">
                     <td>Java</td>
                     <td>/*</td>
                     <td>*/</td>
                     <td class="left">/*<br/>This is a Java multi-line comment<br/>*/</td>
                 </tr>
-                <tr>
+                <tr class="rowShade2">
                     <td>Javascript</td>
                     <td>/*</td>
                     <td>*/</td>
                     <td class="left">/*<br/>This is a Javascript multi-line comment<br/>*/</td>
                 </tr>
-                <tr>
+                <tr class="rowShade1">
                     <td>CSS</td>
                     <td>/*</td>
                     <td>*/</td>
                     <td class="left">/*<br/>This is a CSS multi-line comment<br/>*/</td>
                 </tr>
-                <tr class="errorRow">
+                <tr class="errorRow rowShade2">
                     <td>R</td>
                     <td>N/A</td>
                     <td>N/A</td>
@@ -104,6 +110,13 @@
             <tfoot>
             </tfoot>
         </table>
+        
+        <table>
+        
+        
+        
+        
+        
         <a href="#top">[back to top]</a>
         
         <hr>
@@ -131,30 +144,125 @@
         &#60;/body&#62;
     &#60;/html&#62;
         </pre></p>
+        
+        <h3>Basic layout of an HTML table:</h3>
+        <p><pre>
+    &#60table&#62
+        &#60thead&#62
+            &#60tr&#62
+                &#60th&#62&#60/th&#62
+                &#60th&#62&#60/th&#62
+                &#60th&#62&#60/th&#62
+            &#60/tr&#62
+        &#60/thead&#62
+        &#60tbody&#62
+            &#60tr&#62
+                &#60td&#62&#60/td&#62
+                &#60td&#62&#60/td&#62
+                &#60td&#62&#60/td&#62
+            &#60/tr&#62
+        &#60/tbody&#62
+        &#60tfoot&#62
+        &#60/tfoot&#62
+    &#60/table&#62
+        </pre></p>
         <a href="#top">[back to top]</a>
         
         <hr>
         
         <h2><a id="java">Java</a></h2>
+        <h3>Writing a method in Java</h3>
+        <p><pre>
+    <span class="jvAccess mono">access</span> <span class="jvReturn mono">return</span> <span class="mono"><span class="user_input">methodName</span>(<span class="user_input">parameters</span>)</span>{
+        //code here
+    }
+        </pre></p>
+        <p>
+            <span class="jvAccess">access</span> can be:
+            <ul>
+                    <li>public</li>
+                    <li>private</li>
+                    <li>protected</li>
+            </ul>
+        </p>
+        <p>
+            <span class="jvReturn">return</span> can be:
+            <ul>
+                    <li>void</li>
+                    <li>[any built-in type]</li>
+                    <li>[any class type]</li>
+                    <li>[any interface type]</li>
+            </ul>
+        </p>
+        
         <a href="#top">[back to top]</a>
         
         <hr>
         
         <h2><a id="javascript">Javascript</a></h2>
-        blah<br/>
-        blah<br/>
-        blah<br/>
-        blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>
+       
         <a href="#top">[back to top]</a>
         
         <hr>
         
         <h2><a id="css">CSS</a></h2>
+        <h3>Targeting different elements</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>To target</th>
+                    <th>Use</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Everything</td>
+                    <td class="left mono">* {<br/>}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="left mono">&#60div&#62</td>
+                    <td class="left mono">div {<br/>}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="left mono">&#60div id="foo"&#62</td>
+                    <td class="left mono">#foo {<br/>}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="left mono">&#60div class="bar"&#62</td>
+                    <td class="left mono">.foo {<br/>}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="left mono">&#60div class="foo"&#62<br/>&nbsp;&nbsp;&nbsp;&nbsp;&#60div class="bar"&#62</td>
+                    <td class="left mono">.foo .bar {<br/>}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="left mono">&#60div class="foo bar"&#62</td>
+                    <td class="left mono">.foo.bar {<br/>}</td>
+                    <td>(No space!)</td>
+                </tr>
+                
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+        
         <a href="#top">[back to top]</a>
                 
         <hr>
         
         <h2><a id="r">R</a></h2>
+        <h3>Writing a function in R</h3>
+        <p><pre>
+    function <span class="user_input">foobar</span>(<span class="user_input">parameters</span>){
+        <span class="user_input"># code here</span>
+    }
+        </pre></p>
         <a href="#top">[back to top]</a>
     </body>
 </html>
